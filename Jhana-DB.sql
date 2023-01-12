@@ -1,3 +1,5 @@
+use jhana;
+
 drop table if exists users;
 create table users (
 id int auto_increment primary key,
@@ -11,7 +13,7 @@ create table roles (
 id int auto_increment primary key, 
 name varchar(20));
 
-insert into roles(name) values ('admin'),( 'user');
+insert into roles(name) values ('ADMIN'),( 'USER');
 
 drop table if exists user_role;
 CREATE TABLE user_role (
